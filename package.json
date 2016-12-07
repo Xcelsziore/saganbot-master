@@ -1,0 +1,55 @@
+{
+  "name": "saganbot",
+  "version": "1.0.5",
+  "description": "a Slack bot that can assist first-time vRA Users",
+  "keywords": [
+    "Slack",
+    "bot",
+    "vRealize Automation",
+    "glossary",
+    "vRA",
+    "vra",
+    "Sagan"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xcelsziore/saganbot-master"
+  },
+  "main": "lib/saganbot.js",
+  "bin": {
+    "saganbot": "bin/bot.js"
+  },
+  "scripts": {
+    "start": "node bin/bot.js",
+    "test": "node_modules/.bin/xo bin/bot.js lib/saganbot.js"
+  },
+  "author": {
+    "name": "Aish Nair",
+    "email": "aishn@vmware.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "async": "^1.4.1",
+    "progress": "^1.1.8",
+    "request": "^2.60.0",
+    "slackbots": "^0.3.0",
+    "sqlite3": "^3.0.10"
+  },
+  "devDependencies": {
+    "xo": "^0.5.2"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ]
+    }
+  }
+}
