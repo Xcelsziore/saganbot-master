@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/xcelsziore/saganbot-master"
+    "url": "git+https://github.com/xcelsziore/saganbot-master.git"
   },
   "main": "lib/saganbot.js",
   "bin": {
@@ -21,12 +21,9 @@
   },
   "scripts": {
     "start": "node bin/bot.js",
-    "test": "node_modules/.bin/xo bin/bot.js lib/saganbot.js"
+    "test": "xo bin/bot.js lib/saganbot.js"
   },
-  "author": {
-    "name": "Aish Nair",
-    "email": "aishn@vmware.com"
-  },
+  "author": "Aish Nair <aishn@vmware.com>",
   "license": "MIT",
   "engines": {
     "node": ">=0.10.0"
@@ -36,7 +33,7 @@
     "progress": "^1.1.8",
     "request": "^2.60.0",
     "slackbots": "^0.3.0",
-    "sqlite3": "^3.0.10"
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "xo": "^0.5.2"
@@ -51,5 +48,9 @@
         }
       ]
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/xcelsziore/saganbot-master/issues"
+  },
+  "homepage": "https://github.com/xcelsziore/saganbot-master#readme"
 }
